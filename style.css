@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #e3e4e6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 1em;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    z-index: 99;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+main {
+    margin: 2rem 0;
+}
+
+#beranda {
+    position: relative;
+    height: 90vh;
+    display: flex;
+}
+
+.svg-beranda {
+    position: absolute;
+    bottom: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    z-index: 99;
+}
+
+.image-profile {
+    max-width: 500px;
+}
+
+.beranda-content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.beranda-title {
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.beranda-subtitle {
+    font-size: 20px;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.cv-button {
+    background-color: #04aa6d;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+#profil {
+    margin-top: 3rem;
+}
+
+#profil .card {
+    background-color: white;
+    width: 100%;
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+#profil .row {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+#profil article {
+    width: 75%;
+}
+
+
+#profil .tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+
+#profil .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+#profil .tab button:hover {
+    background-color: #ddd;
+  }
+  
+#profil .tab button.active {
+    background-color: #ccc;
+  }
+  
+#profil .tabcontent {
+    display: none;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+#profil aside {
+    width: 25%;
+    text-align: center;
+}
+
+#profil aside img {
+    width: 50%;
+}
+
+#skill {
+    margin-top: 3rem;
+}
+
+#skill .container {
+    flex-direction: column;
+    text-align: center;
+}
+
+#skill .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2.5rem;
+    justify-content: center;
+}
+
+#kontak {
+    margin-top: 3rem;
+}
+
+#kontak .container {
+    flex-direction: column;
+    text-align: center;
+}
+
+#kontak .row {
+    display: flex;
+    justify-content: space-around;
+}
+
+#kontak .row .col {
+    display: flex;
+    flex-direction: column;
+}
+
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+
+.footer p {
+    margin: auto;
+    width: fit-content;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    #beranda .container {
+        flex-direction: column;
+        margin-top: 1rem;
+        z-index: -1;
+    }
+
+    #beranda .image-profile {
+        width: 200px;
+        margin: auto;
+    }
+
+    #beranda .beranda-content .beranda-title {
+        font-size: 30px;
+        margin-top: 2.5rem;
+    }
+
+    #beranda .beranda-subtitle {
+        font-size: 12px;
+    }
+
+    #beranda .cv-button {
+        padding: 12px;
+        font-size: 12px;
+    }
+
+    #profil .row {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    #profil article {
+        width: 100%;
+    }
+    
+    #profil aside {
+        width: 100%
+    }
+
+    #kontak .row {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+

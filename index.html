@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <h1>Biografi</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">&#9776;</div>
+    </header>
+    <main>
+        <section id="beranda">
+            <div class="container">
+                <div class="image-profile">
+                    <img src="./assets/My project-1.webp" alt="profile" width="100%"/>
+                </div>
+                <div class="beranda-content">
+                    <p class="beranda-title">SELAMAT DATANG</p>
+                    <p class="beranda-subtitle">Rahmatul Ramadhani | Software Developer</p>
+                    <button type="button" class="cv-button">Download CV</button>
+                </div>
+            </div>
+            <img src="./assets/svg-beranda.svg" alt="svg-beranda" class="svg-beranda"/>
+        </section>
+        <section id="profil">
+            <div class="container">
+                <div class="card">
+                    <h1 style="margin: auto; width: fit-content;">Profil</h1>
+                    <div class="row">
+                        <article>
+                            <div class="tab">
+                                <button type="button" class="tablinks" onclick="openTabs(event, 'tentang')">Tentang</button>
+                                <button type="button" class="tablinks" onclick="openTabs(event, 'sekolah')">Sekolah</button>
+                                <button type="button" class="tablinks" onclick="openTabs(event, 'pengalaman')">Pengalaman</button>
+                            </div>
+
+                            <div id="tentang" class="tabcontent" style="display: block;">
+                                Saya seorang programmer yang memahami dasar-dasar dalam pengembangan web, suka bekerja dalam tim, cepat dalam menanggapi hal baru, memiliki rasa ingin tahu dan semangat yang tinggi dalam pengembangan aplikasi berbasis web. Selain pengembangan aplikasi berbasis web, saya juga memiliki minat kerja dalam membuat aplikasi pembelajaran mesin dan analisis data. Memiliki pengalaman 2 tahun membuat aplikasi Full-stack menggunakan framework Laravel, dan membuat aplikasi menggunakan Node JS.
+                            </div>
+                            <div id="sekolah" class="tabcontent">
+                                <h2>Universitas Pembangunan Nasional Veteran Yogyakarta</h2>
+                                <h4 style="margin: 1rem 0;">Informatika | IPK 3.39</h4>
+                            </div>
+                            <div id="pengalaman" class="tabcontent">
+                                <h1>Dinas Tenaga Kerja dan Transmigrasi Profinsi Sumatera Barat | (April 2021 - Mei 2021)</h1>
+                                <h4 style="margin: 1rem 0;">Magang Programmer</h4>
+                                <p style="margin-bottom: 5px;">Deskripsi Pekerjaan : </p>
+                                <ul style="margin-left: 1rem;">
+                                    <li>Membuat aplikasi pelaporan Informasi Pasar Kerja (IPK) menggunakan Laravel</li>
+                                    <li>Membuat sebuah aplikasi Pelaporan Informasi Pasar Kerja berbasis website menggunakan Laravel</li>
+                                    <li>Membantu pegawai dalam membuat dokumen gaji pegawai</li>
+                                </ul>
+                            </div>
+                        </article>
+                        <aside>
+                            <h1 style="margin-bottom: 1rem;">BIODATA</h1>
+                            <img src="./assets/foto 4x6.jpg" alt="pas-foto" />
+                            <p style="
+                                font-size: 20px;
+                                font-weight: bold;
+                                margin: 1rem;
+                            ">Rahmatul Ramadhani, S.Kom</p>
+                            <p>Tempat Lahir : Padang</p>
+                            <p>Tanggal Lahir : 16 Desember 1999</p>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skill">
+            <div class="container">
+                <h1 style="margin-bottom: 1rem;">Skill</h1>
+                <div class="row" id="skillDisplay"/>
+            </div>
+        </section>
+        <section id="kontak">
+            <div class="container">
+                <h1 style="margin-bottom: 1rem;">Kontak</h1>
+                <div class="row">
+                    <div class="col">
+                        <i class="fa-regular fa-envelope"></i>
+                        <a href="mailto:rahmatulramadhani06@gmail.com">rahmatulramadhani06@gmail.com</a>
+                    </div>
+                    <div class="col">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <a href="wa.me/08990929826">08990929826</a>
+                    </div>
+                    <div class="col">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/rahmatulramadhani/">rahmatul ramadhani</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <button id="btnTop" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+    <footer class="footer"><p>Copyright &copy; Rahmatul Ramadhani 2023</p></footer>
+    <script src="./script.js"></script>
+</body>
+</html>
